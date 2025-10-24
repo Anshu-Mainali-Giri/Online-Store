@@ -5,27 +5,16 @@ require_once 'config.php';
 // Secure database connection function
 function connectToDatabase()
 {
-	try {
-		// connect to our SQLITE database 
-		$dbh = new PDO("sqlite:" . DB_PATH);
-		
-		// enable errors
-		$dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		
-		//Turn OFF emulated prepared statements.
-		$dbh->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
-		
-		// Set default fetch mode
-		$dbh->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-		
-		return $dbh;
-	} catch (PDOException $e) {
-		if (DEBUG_MODE) {
-			die('Database connection failed: ' . $e->getMessage());
-		} else {
-			die('Database connection failed. Please try again later.');
-		}
-	}
+    try {
+        // Use your InfinityFree database credentials here
+        $dbh = new PDO("mysql:host=sql103.infinityfree.com;dbname=if0_40241246_online_store", "if0_40241246", "Ah4N2yqMOJZ");
+        $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $dbh->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+        $dbh->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+        return $dbh;
+    } catch (PDOException $e) {
+        die('Database connection failed. Please try again later.');
+    }
 }
 
 function showErrorMessage($errorMessage)
