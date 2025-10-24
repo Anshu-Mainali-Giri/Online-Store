@@ -7,7 +7,7 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Planet Shopify | Online Shopping Site for Men</title>
+    <title>EliteShop | Online Shopping Site for Men</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
     <link href='https://fonts.googleapis.com/css?family=Delius Swash Caps' rel='stylesheet'>
@@ -24,7 +24,7 @@ include 'includes/check-if-added.php';
 <div class="container" style="margin-top:65px">
          <!--jumbutron start-->
         <div class="jumbotron text-center">
-            <h1>Welcome to Planet Shopify!</h1>
+            <h1>Welcome to EliteShop!</h1>
             <p>We have wide range of products for you.No need to hunt around,we have all in one place</p>
         </div>
         <!--jumbutron ends-->
