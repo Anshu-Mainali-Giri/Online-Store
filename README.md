@@ -1,5 +1,8 @@
 # EliteShop - Premium E-commerce Platform [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+## 🌐 Live Demo
+**[View Live Demo →](https://elite-shop.infinityfree.me/Online-Store/)**
+
 **EliteShop** is a modern, responsive e-commerce platform designed for premium online shopping experiences. Built with PHP backend, MySQL database, and featuring a sleek Bootstrap 5 frontend with custom animations and glassmorphism design elements.
 
 ## ✨ Features
